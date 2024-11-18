@@ -4,48 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин одежды</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 10px 0;
-        }
-        .product button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-        .product button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <h1>Магазин одежды</h1>
-    <div class="product">
-        <h2>Футболка с логотипом</h2>
-        <p>Цена: 500 руб.</p>
-        <button id="add-to-cart">Добавить в корзину</button>
+    <div class="container">
+        <h1>Добро пожаловать в магазин одежды</h1>
+        <div class="product">
+            <h2>Футболка с логотипом</h2>
+            <p>Цена: 500 руб.</p>
+            <button id="add-to-cart">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <h2>Джинсы прямые</h2>
+            <p>Цена: 1200 руб.</p>
+            <button id="add-to-cart">Добавить в корзину</button>
+        </div>
+        <button id="view-cart">Посмотреть корзину</button>
     </div>
-
-    <div class="product">
-        <h2>Джинсы прямые</h2>
-        <p>Цена: 1200 руб.</p>
-        <button id="add-to-cart">Добавить в корзину</button>
-    </div>
-
-    <script>
-        document.querySelectorAll("#add-to-cart").forEach(button => {
-            button.addEventListener("click", () => {
-                alert("Товар добавлен в корзину!");
-            });
-        });
-    </script>
+    <script src="/scripts/app.js"></script>
 </body>
 </html>
